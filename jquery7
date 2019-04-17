@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+    
+        <title> JQuery </title>
+    
+      
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <style type="text/css">
+        
+            #circle{
+                
+                width:150px;
+                height: 150px;
+                border-radius:58%;
+                background-color: aqua;
+                
+            }
+            
+        </style>
+                
+         
+    </head>
+        
+    
+    <body>
+        
+        <div id="circle"></div>        
+              
+       <script type="text/javascript">
+           
+        $("#circle").click(function(){
+                           
+             alert("clicked");              
+              $(this).animate({width:"400px", 
+                height:"400px",
+                marginLeft:"100px",
+                margintop:"100px",
+               }
+                , 2000, function(){
+                             
+                $(this).css("background-color", "red");          
+                             
+              });             
+                           
+        });
+           
+       </script>
+    
+    </body>
+
+</html>
